@@ -1,0 +1,46 @@
+#+title: Computational Neuroscience
+
+#+begin_quote
+Computational neuroscience provides tools and methods for characterizing /what/
+nerovous systems do, determining /how/ the function and understanding /why/ they
+operate in particular ways.
+#+end_quote
+
+This definition plays nicely with the three types of computational models
+(explained below) used in the field:
++ what :: descriptive models
++ how :: mechanistic models
++ why ::  interpretive models
+
+* Computational models
++ Descriptive: how neurons respond to external stimuli; *neuron encoding model.*
+  On the counterpart, we find decoding: extract information from neurons; useful
+  in areas such as BCIs
++ Mechanistic Models: how can we simulate the behaviour of a single neuron or
+  networks of neurons.
++ Interpretive (or Normative) models: why brain circuits operate the way they
+  do?; what are the computational principles underlying their operation?
+
+* Receptive fields
+It refers to the *Specific properties* of a given sensory stimulus that generate
+a strong response from a given cell. In more common words, the receptive field
+refers to the type of features of a stimulus that excite a neuron.
+
+An example of a receptive field is, on a visual task, a spot of light turned on
+at a particular location on the retina.
+** Descriptive model of Receptive Fields
+Following with our example on visual tasks, a descriptive model must tell what
+are the neurons responding to. For example, in the Retina, there are cells that
+respond to light, but they can react in different ways: by exciting when light
+is pointed to the center region of the neuron or when light is turned off on its
+surrodings (/On-center Off-surround receptive field/); the opposite is also
+found, i.e., /Off-center On-surround/, here, the cell is excited either when
+light is turned off at its center region, or when light is turned on at its
+surrodings. This kind of receptive fields are somewhat analogous to convolution
+kernels in Convolutional Neural Networks (CNNs), in the sense that they are
+filters.
+[[file:./img/center_surround_receptive_field.png]]
+
+Additionally, the retina is connected to the Lateral Geniculate Nucleus (LGN)
+and, subsequently to the *Primary Visual Cortex (V1)*.
+[[file:./img/retina_n_visual_cortex.png]]
